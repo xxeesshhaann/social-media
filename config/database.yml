@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: xyz
+  host    : localhost
+  username: postgres
+  password: postgres
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: xyz
+  host    : localhost
+  username: postgres
+  password: postgres

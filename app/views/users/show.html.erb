@@ -1,0 +1,27 @@
+
+<%= form_for @user, url: users_path(@user)  do |f| %>
+<p>
+  <strong>First Name:</strong>
+  <%= @user.first_name %>
+</p>
+ 
+<p>
+  <strong>Last Name:</strong>
+  <%= @user.last_name %>
+</p>
+
+
+  <p>
+    <%= f.submit "Add Friend"%>
+  </p>
+
+<% end %>
+
+<%= form_tag('/add_as_friend') do %>
+ 	
+ 	<%= hidden_field(:f_id, :data, :value => @user.id) %>
+    <%= submit_tag "Add Friend updated"%>
+
+
+<% end %>
+

@@ -1,0 +1,10 @@
+<%= form_for @user, url: users_path(@user)  do |f| %>
+<p>
+  <strong>First Name:</strong>
+  <%= @users.first_name %>
+</p>
+ 
+<p>
+  <strong>Last Name:</strong>
+  <%= @users.last_name %>
+</p>
